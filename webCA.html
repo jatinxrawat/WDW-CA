@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio | Your Name</title>
+
+    <!-- Google Font (simple, not too fancy) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <!-- Common navigation with links to sections -->
+    <header class="site-header" id="home">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <!-- Student Name / Logo -->
+                <span class="logo-circle">S</span>
+                <span class="logo-text">Student Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Simple hero section as Home page -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Jatin Rawat</span></h1>
+                <p>
+                    A passionate student who loves learning, building projects, 
+                    and exploring technology to solve real-world problems.
+                </p>
+                <a href="#skills" class="btn-primary">View My Work</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <!-- About Me section (acts like about.html) -->
+    <section class="about-section" id="about">
+        <div class="section-heading">
+            <h2>About Me</h2>
+            <p>A short introduction about who I am and what I do.</p>
+        </div>
+
+        <div class="about-content">
+            <!-- Profile image using float in CSS -->
+            <div class="about-image-wrapper">
+                <img src="https://i.pinimg.com/474x/fa/d5/e7/fad5e79954583ad50ccb3f16ee64f66d.jpg" alt="Profile Photo" class="about-image">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    I am a dedicated student with a keen interest in web development,
+                    problem-solving, and modern technologies. I enjoy turning ideas 
+                    into simple and meaningful digital experiences.
+                </p>
+                <p>
+                    Currently, I am focusing on improving my skills in HTML, CSS, and 
+                    JavaScript, while also exploring design principles and responsive layouts.
+                </p>
+                <p>
+                    Outside academics, I like reading, playing games, and learning new tools 
+                    that help me grow personally and professionally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS & PROJECTS SECTION ================= -->
+    <!-- Skills / Projects (acts like skills.html) -->
+    <section class="skills-section" id="skills">
+        <div class="section-heading">
+            <h2>Skills & Projects</h2>
+            <p>Some of the technologies I work with and projects I’ve built.</p>
+        </div>
+
+        <!-- Cards aligned using Flexbox -->
+        <div class="skills-container">
+            <!-- Card 1 -->
+            <div class="skill-card">
+                <h3>HTML & CSS</h3>
+                <p>
+                    Built multiple static web pages with clean structure, 
+                    semantic tags, and responsive layouts.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="skill-card">
+                <h3>Responsive Design</h3>
+                <p>
+                    Created layouts that work smoothly on mobiles, tablets, 
+                    and desktops using Flexbox and media queries.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="skill-card">
+                <h3>Mini Portfolio Project</h3>
+                <p>
+                    Designed this student portfolio as a mini project to 
+                    showcase my profile, skills, and contact form.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <!-- Contact Form (acts like contact.html) -->
+    <section class="contact-section" id="contact">
+        <div class="section-heading">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaboration, queries, or feedback.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Properly styled contact form -->
+            <form class="contact-form">
+                <!-- Name field -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email field -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Subject field -->
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                </div>
+
+                <!-- Message field -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
